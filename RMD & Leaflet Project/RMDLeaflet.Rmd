@@ -1,0 +1,16 @@
+---
+output: html_document
+---
+# March 9, 2020
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+``` {r echo=FALSE, warning=FALSE, message=FALSE}
+library(leaflet)
+
+m <- leaflet() %>% setView(lat=40.6974034, lng=-74.1197634, zoom=11) %>%
+    addTiles()
+m
+```
